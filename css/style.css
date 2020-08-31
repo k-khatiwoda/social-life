@@ -1,0 +1,315 @@
+body{
+  margin: 0;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #707070;
+}
+
+/* ================
+Typography
+================== */
+/* ========================Global */
+h1, h2, h3{
+  font-family: 'Lora',serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+a{
+  color: #167cb3;
+  font-weight: 300;
+  text-decoration: none;
+}
+a:hover, a:focus{
+  color: #143774;
+  text-decoration: underline;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================Header */
+.site-title h1{
+  
+  font-size: 2rem ;
+  margin: 0;
+}
+
+.sub-title{
+  font-weight: 700;
+  color: #1792d2;
+  font-size: .75rem;
+  margin: 0;
+}
+ /*======================== Body */
+.article-title{
+  font-size: 1.5rem;
+}
+.article-read-more,
+.article-info{
+  font-size: .875rem;
+}
+.article-body-span{
+  font-weight: 400;
+}
+.article-read-more{
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-read-more:hover, 
+.article-read-more:focus{
+  color: #143774;
+  text-decoration: underline;
+}
+
+.widget-title{
+  display: block;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 3.6px;
+}
+aside a:hover,
+aside a:focus{
+  text-decoration: none;
+}
+.about-me{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #143774;
+}
+/* ================
+Layout
+================== */
+
+/* ========================Header */
+header{
+  background-color: #e9e4e4a9;
+  padding: 2em 0;
+  text-align:center;
+  margin-bottom: 2em;
+}
+.container{
+  width:90%;
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+.container-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+/* ========================Navigation */
+nav ul{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+nav li{
+  margin: 0.5em 0;
+  
+}
+nav a{
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25em 0;
+}
+nav a:hover,
+nav a:focus{
+  color: #1792d2;
+}
+#current-page{
+  border-bottom: 2px solid #707070;
+  color: #1792d2;
+}
+#current-page:hover{
+  color: #707070;
+}
+/* ========================Body */
+.container-body{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+/* ========================Articles */
+.article-info{
+  margin: 1.5em 0;
+}
+.article-featured{
+  border-bottom: 1.5px solid #d3cece;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+.article-recent{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.article-recent-main{
+  order: 2;
+}
+.article-recent-secondary{
+  order: 1;
+}
+.article-title{
+  margin-top: -0.5em;
+}
+
+/* Recent posts on sidebar*/
+.sidebar-widget{
+  padding: 1em;
+  border: 20px solid  #e9e4e4a9;
+}
+.about{
+  display: none;
+}
+.widget-recent-post{
+  padding: 1.5em .2em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:2.5em;
+  border-bottom: 1px solid  #d3cece ;
+}
+.widget-post-title{
+  margin-bottom: 0.1em;
+  order: 2;
+}
+.sidebar-widget img{
+  height: 6em;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+/* ============Footer============== */
+footer{
+  text-align: center;
+  background-color: #143774;
+  padding: 2em 0;
+  
+}
+footer p{
+  font-family:  'Ubuntu',sans-serif ;
+  color: rgb(187, 187, 187);
+  font-size: 1rem;
+  margin: 0.6em auto;
+
+}
+
+
+/* =================================
+.........................Media Queries.............
+=================================== */
+@media (min-width:560px)  and (max-width:770){
+  .article-title{
+    margin-top: -1.9em;
+  }
+  .article-info{
+    text-align: right;
+  }
+}
+@media (min-width:770px){
+ body{
+   font-size: 1.125rem;
+ }
+  /*========================== Navigation */
+  .container-nav{
+    flex-direction: row;
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  nav li{
+    margin-left: 2em;
+  }
+  header{
+    text-align:center;
+    padding: 2em 0;
+  }
+
+  /* ==================================Body */
+  
+  .container{
+    flex-direction: row;
+  }
+  main{
+    flex-basis: 73%;
+    margin-right: 1em;
+    }
+  aside{
+    flex-basis: 24%;
+    }
+/* ==================================Article */
+
+  .article-recent{
+  flex-direction: row;
+}
+.article-recent-secondary{
+  flex-basis: 25%;
+  padding: .5em;
+}
+
+.article-info{
+  text-align: left;
+  font-size: 0.7rem;
+}
+.article-recent-main{
+  flex-basis: 80%;
+  margin-left: 2em;
+}
+
+
+/* Recents on sidebar */
+/* ========================Layout */
+  .widget-recent-post{
+  display: flex;
+  flex-direction: column;
+}
+.widget-post-title{
+  order: 2;
+}
+
+.sidebar-widget img{
+  height: 3em;
+  width: 80%;
+  object-fit: cover;
+  object-position: center; 
+  margin: 1em auto 0.5em;
+}
+img.me{
+  height: 90%;
+}
+.widget-recent-post{
+  border-bottom: 1px solid #d3cece;
+}
+.widget-recent-post:last-child{
+  border-bottom: none;
+}
+.about-me{
+  margin: 2.9em 0 ;
+}
+/* ===================Typography=============== */
+
+.widget-title{
+  display: block;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 3.6px;
+}
+.sidebar-widget h3{
+  font-size: .9rem;
+}
+
+/* ======================== */
+
+}

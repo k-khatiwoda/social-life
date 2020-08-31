@@ -1,0 +1,17 @@
+/* =================
+................Typography 
+===================*/
+strong{
+  font-weight: 700;
+}
+.text-style{
+  font-weight: 400;
+  color: #167cb3;
+}
+img{
+  margin-bottom: 1em;
+}
+p{
+  margin: 1.5em auto;
+  letter-spacing: 1px;
+}
